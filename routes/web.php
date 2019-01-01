@@ -20,4 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('profile','HomeController@profile')->name('profile');
+Route::get('my_thread','HomeController@myThread')->name('my_thread');
+Route::post('save_thread','HomeController@saveThread')->name('save_thread');
 Route::post('save_profile','HomeController@saveProfile')->name('save_profile');
+
+Route::get('threads/{order_by?}','HomeController@threads')->name('threads');

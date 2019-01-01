@@ -56,6 +56,12 @@
                                         <a href="{{ route('profile') }}">Profile</a>
                                     </li>
                                     <li>
+                                        <a href="{{ route('my_thread') }}">My Threads</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('threads') }}">Threads</a>
+                                    </li>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -79,5 +85,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/jquery-1.8.3.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>
